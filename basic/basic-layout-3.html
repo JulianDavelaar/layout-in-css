@@ -6,23 +6,33 @@
     <title>Basic Layout 3</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+
       body{
         display: grid;
         grid-template-rows: 4fr 1fr 1fr;
         gap: 1rem;
-      }
-      
-      body{
-        display: grid;
         grid-row-start: 4;
-        grid-template-columns: ;
+        grid-template-columns: 1fr 1fr;
       }
-      
-      header{
-        display: grid;
-        grid-row-start: 4;
-      
 
+      main{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+      }
+
+      footer{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      header{
+        grid-column-start: 1;
+      }
+
+      nav{
+       grid-column-start: 2; 
       }
     
 
